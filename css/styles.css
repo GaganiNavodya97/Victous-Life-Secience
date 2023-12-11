@@ -143,8 +143,14 @@ a {
     width: 10rem;
     margin-top: 1rem
   }
+
+/* About us page styles */
+  .about-us{
+    display: flex;
+    justify-content: space-between;
+  }
   .left-side{
-    width: 50%;
+    width: 40%;
     height: 90vh;
     position: relative;
     display: flex;
@@ -152,4 +158,29 @@ a {
     background: url('images/about-back.png');
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .right-side{
+    display: block;
+    align-items: center;
+    text-align: left;
+    margin-top: 6rem;
+    width: 50%;
+    height: 90vh;
+  }
+  .topic-plane-about{
+    color: #808080;
+    font-size: 1.5rem;
+    text-transform: uppercase 
+  }
+  .topic-dark-about{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .para{
+    font-size: 0.9rem;
+    width: 30rem
+  }
+  .heighlight{
+    color: #8a2be2;
   }
