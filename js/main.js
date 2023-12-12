@@ -34,6 +34,8 @@ document.addEventListener('DOMContentLoaded', function () {
   // Set the initial state
   showSlide(currentSlide);
 
-  document.querySelector('.left').addEventListener('click', () => changeSlide(0));
+  document.querySelector('.left').addEventListener('click', () => changeSlide(-1));
   document.querySelector('.right').addEventListener('click', () => changeSlide(1));
+
+  setInterval(() => changeSlide(1), 3000); // Automatic slide change every 3 seconds
 });

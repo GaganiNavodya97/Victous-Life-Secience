@@ -124,7 +124,7 @@ a {
     right: 10rem;
   }
   .discription-section{
-    margin-top: 10rem;
+    margin-top: 20rem;
     padding: 0 150px;
     position: absolute;
     display: block;
@@ -266,4 +266,30 @@ a {
   }
   .slide-buttons-legal{
     margin-top: 1rem;
+    margin-left: 3rem;
   }
+  .footer-container{
+    margin-top: 2rem;
+  }
+  .top-footer-section{
+    margin-left: 2rem;
+  }
+  .top-footer-section .footer-link a {
+    color: var(--main-purple);
+    font-size: 0.9rem;
+    text-decoration: none;
+    margin: 1rem;
+  }
+  .top-footer-section .footer-link-i a {
+    color: var(--main-purple);
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin: 1rem;
+  }
+ .botom-footer-section{
+    text-align: center;
+    margin: 1rem;
+ }
+ .bottom-text{
+    margin: 0.5rem;
+ }
