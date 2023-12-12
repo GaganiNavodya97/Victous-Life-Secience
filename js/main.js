@@ -17,22 +17,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // background image slider
 document.addEventListener('DOMContentLoaded', function () {
-    const sliderItems = document.querySelectorAll('.slider-item');
-    let currentSlide = 0;
+  const sliderItems = document.querySelectorAll('.slider-item');
+  let currentSlide = 0;
 
-    function showSlide(index) {
-      sliderItems.forEach((item, i) => {
-        item.style.opacity = i === index ? 1 : 0;
-      });
-    }
+  function showSlide(index) {
+    sliderItems.forEach((item, i) => {
+      item.style.opacity = i === index ? 1 : 0;
+    });
+  }
 
-    function changeSlide(direction) {
-      currentSlide = (currentSlide + direction + sliderItems.length) % sliderItems.length;
-      showSlide(currentSlide);
-    }
+  function changeSlide(direction) {
+    currentSlide = (currentSlide + direction + sliderItems.length) % sliderItems.length;
+    showSlide(currentSlide);
+  }
 
-    document.querySelector('.left').addEventListener('click', () => changeSlide(-1));
-    document.querySelector('.right').addEventListener('click', () => changeSlide(1));
-    
-    setInterval(() => changeSlide(1), 5000); // Automatic slide change every 5 seconds (adjust as needed)
-  });
+  // Set the initial state
+  showSlide(currentSlide);
+
+  document.querySelector('.left').addEventListener('click', () => changeSlide(0));
+  document.querySelector('.right').addEventListener('click', () => changeSlide(1));
+});

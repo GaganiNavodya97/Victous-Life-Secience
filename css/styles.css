@@ -23,6 +23,9 @@ a {
 }
 
 /* header nav bar styles */
+.nav{
+  position: fixed;
+}
 .container-nav{
    display: flex;
    justify-content: space-between;
@@ -104,6 +107,7 @@ a {
   .slider-btn{
     padding: 1rem;
     background-color: var(--main-purple);
+    border: 1px solid var(--main-purple)
   }
   .arrow{
     font-size: 1rem;
@@ -150,8 +154,8 @@ a {
     justify-content: space-between;
   }
   .left-side{
-    width: 40%;
-    height: 90vh;
+    width: 50%;
+    height: 100vh;
     position: relative;
     display: flex;
     align-items: center;
@@ -161,16 +165,15 @@ a {
   }
   .right-side{
     display: block;
-    align-items: center;
     text-align: left;
     margin-top: 6rem;
     width: 50%;
-    height: 90vh;
+    height: 100vh;
   }
   .topic-plane-about{
     color: #808080;
     font-size: 1.5rem;
-    text-transform: uppercase 
+    text-transform: uppercase
   }
   .topic-dark-about{
     font-size: 2rem;
@@ -183,4 +186,84 @@ a {
   }
   .heighlight{
     color: #8a2be2;
+  }
+
+  /* product section styles */
+  .product{
+    height: 90vh;
+  }
+  .buy-now{
+    background-color: #FFFFFF;
+    color: #000000;
+    text-transform: uppercase;
+    border: 1px solid #FFFFFF;
+    padding: 0.5rem;
+    width: 10rem;
+    margin-top: 1rem
+  }
+  .slider-btn-prod{
+    padding: 1rem;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF
+  }
+
+  /* personal care page styles */
+  .presonal-care{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+  }
+  .right-side-personal{
+    display: flex;
+    align-items: center;
+    text-align: end;
+    margin-right: 5rem;
+    margin-left: 10rem;
+    margin-top: 6rem;
+    width: 50%;
+    height: 100vh;
+  }
+  .topic-dark-personal{
+    text-align: right;
+    max-width: 10rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  /* legal section */
+  .legal {
+    text-align: center;
+  }
+  .leagal-container{
+    position: relative;
+    height: 100vh;
+    display: block;
+    align-items: center;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 25%;
+  }
+  .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: inline-block;
+  }
+  .stars {
+    color: #FFD700;
+    font-size: 1rem;
+    display: block;
+    margin-left: 10px;
+  }
+  .midle-container{
+    width: 10rem;
+  }
+  .legal-dis{
+    color: #FFFFFF;
+  }
+  .slide-buttons-legal{
+    margin-top: 1rem;
   }

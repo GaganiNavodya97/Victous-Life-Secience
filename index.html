@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
       <div class="container-nav container">
         <a class="navbar-brand" href="#">
           <img class="header-image" src="images/logo.png" width="90" height="70" alt=""/>
@@ -76,7 +76,7 @@
     <!-- home section  -->
     <section class="home" id="home">
       <div class="slider-container">
-        <div class="slider-item active side-container" style="background-image: url('https://img.freepik.com/free-photo/realistic-helix-dna-representation_23-2150280382.jpg?w=900&t=st=1702316185~exp=1702316785~hmac=e0da86efcd511301b0bc94f24b12e51c9e0048e439b57ef001937d317cabf84f');">
+        <div class="slider-item side-container" style="background-image: url('https://img.freepik.com/premium-vector/vector-abstract-background-with-glare-glow-dnk-information-medicine_395079-12227.jpg?size=626&ext=jpg&ga=GA1.1.1342534480.1702311125&semt=ais');">
           <div class="discription-section">
             <span class="plane-topic-home">01 Product Name</span><br>
             <span class="blod-topic-home">Science For Transforming Lives</span><br>
@@ -84,13 +84,18 @@
           </div>
           <div class="slide-buttons">
             <button class="slider-btn left" onclick="changeSlide(-1)"><i class='bx bx-left-arrow-alt arrow' style='color:#fff'  ></i></button>
-            <button class="slider-btn right" onclick="changeSlide(1)"><i class='bx bx-right-arrow-alt arrow' style='color:#fff' ></i></i></button>
+            <button class="slider-btn right" onclick="changeSlide(1)"><i class='bx bx-right-arrow-alt arrow' style='color:#fff' ></i></button>
           </div>
         </div>
         <div class="slider-item side-container" style="background-image: url('https://img.freepik.com/free-psd/purple-wavy-background_1297-180.jpg?size=626&ext=jpg&ga=GA1.1.1342534480.1702311125&semt=ais');">
+          <div class="discription-section">
+            <span class="plane-topic-home">02 Product Name</span><br>
+            <span class="blod-topic-home">Science For Transforming Lives</span><br>
+            <button class="know-more">KNOW MORE</button>
+          </div>
           <div class="slide-buttons">
             <button class="slider-btn left" onclick="changeSlide(-1)"><i class='bx bx-left-arrow-alt arrow' style='color:#fff'  ></i></button>
-            <button class="slider-btn right" onclick="changeSlide(1)"><i class='bx bx-right-arrow-alt arrow' style='color:#fff' ></i></i></button>
+            <button class="slider-btn right" onclick="changeSlide(1)"><i class='bx bx-right-arrow-alt arrow' style='color:#fff' ></i></button>
           </div>
         </div>
       </div>
@@ -112,11 +117,97 @@
       </div>
     </section>
 
+    <!-- product section -->
+    <section class="product" id="product">
+      <div class="slider-container">
+        <div class="slider-item active side-container" style="background-image: url('https://img.freepik.com/premium-photo/magic-potion-glass-bottle-with-plants-flowers-purple-background_176873-11862.jpg?size=626&ext=jpg&ga=GA1.1.1342534480.1702311125&semt=ais');">
+          <div class="discription-section">
+            <span class="plane-topic-home">Featured Products</span><br>
+            <span class="blod-topic-home">LUMINANCE Cellular Rejuvenation</span><br>
+            <span class="plane-topic-home">Rs. 6,999</span><br>
+            <button class="buy-now">Buy Now</button>
+          </div>
+          <div class="slide-buttons">
+            <button class="slider-btn-prod left" onclick="changeSlide(-1)"><i class='bx bx-left-arrow-alt arrow' style='color:#000'  ></i></button>
+            <button class="slider-btn-prod right" onclick="changeSlide(1)"><i class='bx bx-right-arrow-alt arrow' style='color:#000' ></i></button>
+          </div>
+        </div>
+        <div class="slider-item side-container" style="background-image: url('data:image/jpeg;base64,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');">
+          <div class="discription-section">
+            <span class="plane-topic-home">Featured Products</span><br>
+            <span class="blod-topic-home">LUMINANCE Cellular Rejuvenation</span><br>
+            <span class="plane-topic-home">Rs. 6,999</span><br>
+            <button class="buy-now">Buy now</button>
+          </div>
+          <div class="slide-buttons">
+            <button class="slider-btn-prod left" onclick="changeSlide(-1)"><i class='bx bx-left-arrow-alt arrow' style='color:#000'  ></i></button>
+            <button class="slider-btn-prod right" onclick="changeSlide(1)"><i class='bx bx-right-arrow-alt arrow' style='color:#000' ></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Wellness section -->
+    <section class="Wellness" id="wellness">
+      <div class="slider-container">
+        <div class="slider-item active side-container" style="background-image: url('images/wellness.jpg');">
+          <div class="discription-section">
+            <span class="blod-topic-home">Story of wellness</span><br>
+            <button class="know-more">KNOW MORE</button>
+          </div>
+          <div class="slide-buttons">
+            <button class="slider-btn left" onclick="changeSlide(-1)"><i class='bx bx-left-arrow-alt arrow' style='color:#fff'  ></i></button>
+            <button class="slider-btn right" onclick="changeSlide(1)"><i class='bx bx-right-arrow-alt arrow' style='color:#fff' ></i></button>
+          </div>
+        </div>
+        <div class="slider-item side-container" style="background-image: url('images/wellness.jpg');">
+          <div class="discription-section">
+            <span class="blod-topic-home">Story of wellness</span><br>
+            <button class="know-more">KNOW MORE</button>
+          </div>
+          <div class="slide-buttons">
+            <button class="slider-btn left" onclick="changeSlide(-1)"><i class='bx bx-left-arrow-alt arrow' style='color:#fff'  ></i></button>
+            <button class="slider-btn right" onclick="changeSlide(1)"><i class='bx bx-right-arrow-alt arrow' style='color:#fff' ></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- personal care -->
+    <section class="presonal-care" id="presonal-care">
+      <div class="left-side" style="background-image: url('images/mental-health.jpg');"></div>
+      <div class="right-side-personal">
+        <div>
+          <span class="topic-dark-personal">Give a boost to your mental<br>health</span><br>
+          <p class="para">Wellness llies in everyones's hand!</p>
+          <button class="know-more">Register now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Legal sectition -->
+    <section class="legal" id="legal">
+      <div class="leagal-container" style="background-image: url('https://img.freepik.com/free-photo/realistic-helix-dna-representation_23-2150280382.jpg?size=626&ext=jpg&ga=GA1.1.1342534480.1702311125&semt=ais');">
+        <div class="d-inline-flex p-2">
+          <div class="avatar"><img class="avatar" src="data:image/jpeg;base64,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" alt=""></div>
+          <div class="stars">
+            Mathew <br>
+            ★★★★★
+          </div>
+        </div>
+        <div class="legal-dis">
+          <span>"Very well product in this price, whare you will get full result. Very pleased with the purchase"</span>
+        </div>
+        <div  class="slide-buttons-legal">
+          <button class="slider-btn left" onclick="changeSlide(-1)"><i class='bx bx-left-arrow-alt arrow' style='color:#fff'  ></i></button>
+          <button class="slider-btn right" onclick="changeSlide(1)"><i class='bx bx-right-arrow-alt arrow' style='color:#fff' ></i></button>
+        </div>
+      </div>
+    </section>
+
+    </section>
     <!-- link to js  -->
     <script src="js/main.js"></script>
-    <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   </body>
 </html>
